@@ -1,0 +1,7 @@
+{
+  "name": "interactive-map-web",
+  "version": "1.0.0",
+  "scripts": {
+    "div": "echo 'Build completed - No compilation needed.'"
+  }
+}

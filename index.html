@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>互动地图</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+
+
+        .custom-icon {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .icon-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* 保持原图比例 */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./renderer.js"></script>
+    <div style="margin: 10px; z-index: 1000; position: absolute; top: 10px; left: 10px;">
+        <button onclick="pause()">暂停</button>
+        <button onclick="resume()">继续</button>
+        <button onclick="speedUp()">加速</button>
+        <button onclick="reset()">重置</button>
+        <button onclick="showAddCharacterDialog()">添加游戏玩家</button>
+    </div>
+
+    <!-- 弹出表单对话框 -->
+    <div id="addCharacterDialog"
+        style="display: none; position: absolute; top: 60px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc; z-index: 2000;">
+        <label>头像: <input type="file" id="characterImage" accept="image/*"></label><br><br>
+        <label>速度(km/h): <input type="number" id="characterSpeed" value="50"></label><br><br>
+        <label>路径颜色: <input type="color" id="characterColor" value="#00aa00"></label><br><br>
+        <button onclick="addCharacter()">确认添加</button>
+        <button onclick="hideAddCharacterDialog()">取消</button>
+    </div>
+
+</body>
+
+</html>
