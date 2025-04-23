@@ -1,7 +1,7 @@
 name = "map-worker"
-account_id = "txHJOXAxDxWdEb5kjL4iAnpBbe8n7np9653nZ4Oy"
+account_id = "0RdWAS2AkqHKhqUMFpzZLUU5YpFlOk5Sdrwyf3vT"
 workers_dev = true
-compatibility_date = "2024-04-23"
+compatibility_date = "2024-04-22"
 
 [assets]
 directory = "./dist"
