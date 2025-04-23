@@ -23,14 +23,14 @@ function initMap() {
 
     const iconA = L.divIcon({
         className: 'custom-icon',
-        html: '<img src="assets/a.jpg" class="icon-img" />',
+        html: '<img src="assets/A.jpg" class="icon-img" />',
         iconSize: [50, 50],
         iconAnchor: [25, 25]
     });
 
     const iconB = L.divIcon({
         className: 'custom-icon',
-        html: '<img src="assets/b.jpg" class="icon-img" />',
+        html: '<img src="assets/B.jpg" class="icon-img" />',
         iconSize: [50, 50],
         iconAnchor: [25, 25]
     });
