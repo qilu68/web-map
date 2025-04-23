@@ -5,8 +5,5 @@ workers_dev = true
 compatibility_date = "2024-04-23"
 
 [site]
-bucket = "./"
-entry-point = "workers-site"
-
-[build]
-upload.format = "service-worker"
+bucket = "./dist"
+entry-point = "."
