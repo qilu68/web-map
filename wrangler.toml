@@ -1,9 +1,7 @@
 name = "map-worker"
-type = "javascript"
 account_id = "txHJOXAxDxWdEb5kjL4iAnpBbe8n7np9653nZ4Oy"
 workers_dev = true
 compatibility_date = "2024-04-23"
 
-[site]
-bucket = "./dist"
-entry-point = "."
+[assets]
+directory = "./dist"
